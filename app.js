@@ -15,7 +15,7 @@ app.use('/', function (req, res, next) {
 	next();
 });
 
-app.get('/mine', function(req, res) {
+app.get('/', function(req, res) {
 	res.render('mine');
 });
 
