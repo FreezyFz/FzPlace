@@ -5,7 +5,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false});
 
 var port = process.env.PORT || 3000;
 
-app.set('view engine', 'html');
+app.set('view engine', 'ejs');
 
 app.use('/pic', express.static(__dirname + '/pic'));
 app.use('/css', express.static(__dirname + '/css'));
