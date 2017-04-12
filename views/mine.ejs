@@ -36,6 +36,13 @@
 					<input type="submit" value="Submit">
 				</form>
 				<h1>Written Board</h1>
+				<% if (userinfos.length) { %>
+		  		<ul>
+  		  		<% userinfos.forEach(function(userinfo){ %>
+		     		<li><%= userinfo['firstname'] %>  <%= userinfo['lastname'] %></li>
+		   		<% }) %>
+	  			</ul>
+				<% } %>
 			</div>
 		</div>
 	</body>
